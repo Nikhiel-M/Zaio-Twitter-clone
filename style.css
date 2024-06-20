@@ -5,6 +5,32 @@ margin: 0px;
 background-color: black;
 }
 
+.heading{
+    font-size: 25px;
+    font-stretch: ultra-condensed;
+        
+    font-weight: 800;
+     margin: 10px 10px 10px 10px;
+}
+
+.mdtxt{
+    font-size: calc(1.6vw - 1vh);
+    margin: 0 0 0 10px;
+    font-weight: 600;
+}
+
+.smtxt{
+    font-size: 14px;
+    margin: 0 0 0 10px;
+    line-height: 15px;
+    font-weight: 500;
+    color:  rgb(89, 93, 96) ;
+}
+
+.smtxt:last-child{
+    margin-bottom: 10px;
+}
+
 .mainbody{ display: flex;
     height: 100vh;
 
@@ -166,6 +192,7 @@ padding: 10px 8px 5px 8px ;
 }
 
 .search-icon {
+    color: #777;
    background-color: #202327;
     height: 25px;
     width: 25px;
@@ -175,9 +202,9 @@ padding: 10px 8px 5px 8px ;
 
 
 .premium{
-    margin: 30px 0 0 90px;
-    width: 300px;
-    height: fit-content;
+margin: 30px 0 0 90px;
+width: 300px;
+height: fit-content;
 color: rgb(255, 255, 255);
 border-top-right-radius: 25px;
 border-top-left-radius: 25px;
@@ -186,12 +213,7 @@ border-bottom-right-radius:25px ;
 border: 1px solid rgb(47 51 54) ;
 }
 
-.heading{
-    font-size: 25px;
-    
-    font-weight: 800;
-     margin: 10px 10px 10px 10px;
-}
+
 
 .premium-text{
  font-size: medium;
@@ -200,14 +222,28 @@ border: 1px solid rgb(47 51 54) ;
 }
 
 .trends{
-    background-color: #fa0505;
-    width: 10px;
+   color: white;
+}
+
+.tbox{
+    margin: 30px 0 10px 90px;
+width: 300px;
+height: 100%;
+color: rgb(255, 255, 255);
+border-top-right-radius: 25px;
+border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius:25px ;
+border: 1px solid rgb(47 51 54) ;
+}
+
+.follow{
+    margin: 100px 0 0 0;
+    background-color: orange;
     height: 20px;
 }
 
-
 .footer{
-    background-color: #1e1e1e;
-    width: 10px;
+    background-color: #252e95;
     height: 20px;
 }
