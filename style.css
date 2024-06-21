@@ -1,118 +1,119 @@
 
-*{box-sizing: border-box;
-padding: 0px;
-margin: 0px;
-background-color: black;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.heading{
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Set the entire body background to black */
+    color: white; /* Default text color to white */
+    font-family: Arial, sans-serif; /* Example font */
+}
+
+.heading {
     font-size: 25px;
     font-stretch: ultra-condensed;
-        
     font-weight: 800;
-     margin: 10px 10px 10px 10px;
+    margin: 10px;
 }
 
-.mdtxt{
+.mdtxt {
     font-size: 20px;
-    margin: 0 0 0 10px;
+    margin-left: 10px;
     font-weight: 600;
 }
 
-.smtxt{
+.smtxt {
     font-size: 14px;
-    margin: 0 0 0 10px;
+    margin-left: 10px;
     font-weight: 500;
-    color:  rgb(89, 93, 96) ;
+    color: rgb(89, 93, 96);
 }
 
-.smtxt:last-child{
+.smtxt:last-child {
     margin-bottom: 10px;
 }
-.showmore{  
-     font-size: 18px;
+
+.showmore {  
+    font-size: 18px;
     margin: 10px 0 18px 15px;
     font-weight: 500;
     color: rgb(29, 155, 240);
     cursor: pointer;
-
 }
 
-.mainbody{ display: flex;
+.mainbody {
+    display: flex;
     height: 100vh;
-
+    width: 100vw; /* Ensure the main container takes full width */
 }
 
-.home{ 
+.home { 
     background-color: black;
-width: 20vw;
-height: 100%;
-color: rgb(255, 255, 255);
- height: 100vh;
- position: fixed;
- margin-left: 170px;
-
+    width: 20vw;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    left: 0; /* Ensure it's positioned to the left */
 }
 
-.tweets{
-    background-color: rgb(0, 0, 0);
- width: 60vw;
- height: 100%;
- 
+.tweets {
+    background-color: black;
+    width: 60vw;
+    height: 100vh;
+    margin-left: 20vw; /* Adjust to align with the home section */
 }
 
-.feed{
-    
- width: 25vw;
- height: 100%vh;
- margin: 0 100px 0 200px;
-display: flex;
+.feed {
+    background-color: black;
+    width: 20vw; /* Adjust width to make sure it fits within the viewport */
+    height: 100vh;
+    display: flex;
     flex-direction: column;
-
+    margin-left: auto; /* Align it to the right */
 }
-     
-.category-section{
+
+.category-section {
     overflow: hidden;
 }
 
-.category{
+.category {
     display: flex;
     justify-content: left;
-align-items:center;
-padding: 10px 8px 5px 8px ;
+    align-items: center;
+    padding: 0 8px 0 8px;
     font-size: 20px;
     font-weight: 500; 
-    
 }
-.category-text{
+
+.category-text {
     border-radius: 25px;
     border: none; 
     cursor: pointer; 
     transition: background-color 0.3s; 
-
 }
 
-.category-text:hover{
-     background-color: rgb(55, 58, 60);
+.category-text:hover {
+    background-color: rgb(55, 58, 60);
 }
 
-.icon{
+.icon {
     height: 35px;
     width: 35px;
     margin: 10px 15px 10px 10px;
-     
 }
 
 .twitter-button { 
     height: 50px;
     width: 200px;
-   
     background-color: #1DA1F2; 
     color: #fff; 
     padding: 10px 20px; 
     font-size: 16px; 
     border-radius: 25px; 
-    border-right: 15px;
     border: none; 
     cursor: pointer; 
     transition: background-color 0.3s; 
@@ -123,15 +124,14 @@ padding: 10px 8px 5px 8px ;
     background-color: #0d8ddb; 
 }
 
-.test{
-    margin: 0 30px 0 150px;
-    
+.test {
+    margin: 0 0 0 100px;
 }
 
 .profile-container {
     display: flex;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
     padding: 10px;
     border: none; 
     cursor: pointer; 
@@ -139,8 +139,7 @@ padding: 10px 8px 5px 8px ;
     transition: background-color 0.3s;
 }
 
-.profile-container:hover{
-    
+.profile-container:hover {
     background-color: rgb(55, 58, 60);
 }
 
@@ -179,10 +178,9 @@ padding: 10px 8px 5px 8px ;
     width: 300px;
     padding: 10px;
     border-radius: 25px;
-    background-color:rgb(32, 35, 39) ;
+    background-color: rgb(32, 35, 39);
     display: flex;
     align-items: center;
-    
 }
 
 .search-box input {
@@ -201,66 +199,51 @@ padding: 10px 8px 5px 8px ;
 
 .search-icon {
     color: #777;
-   background-color: #202327;
+    background-color: #202327;
     height: 25px;
     width: 25px;
 }
 
-
-.premium{
-margin: 30px 0 0 90px;
-width: 300px;
-height: fit-content;
-color: rgb(255, 255, 255);
-border-top-right-radius: 25px;
-border-top-left-radius: 25px;
-border-bottom-left-radius: 25px;
-border-bottom-right-radius:25px ;
-border: 1px solid rgb(47 51 54) ;
+.premium {
+    margin: 30px 0 0 0;
+    width: 300px;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 1px solid rgb(47, 51, 54);
 }
 
-.premium-text{
- font-size: medium;
- line-height: 25px;
- margin: 0 10px 10px 20px;
+.premium-text {
+    font-size: medium;
+    line-height: 25px;
+    margin: 0 10px 10px 20px;
 }
 
-
-.trendstext{
+.trendstext {
     display: flex;
     flex-direction: column;
-
-}
-
-.trendstext{
     cursor: pointer;  
-
-}
-.trendstext:hover{
-    background: grey;
+    background-color: rgb(3, 3, 3);
 }
 
-
-.tbox{
-    margin: 30px 0 0 90px;
-width: 300px;
-height:fit-content;
-color: rgb(255, 255, 255);
-border-top-right-radius: 25px;
-border-top-left-radius: 25px;
-border-bottom-left-radius: 25px;
-border-bottom-right-radius:25px ;
-border: 1px solid rgb(47 51 54) ;
+.trendstext:hover {
+    background: rgb(10, 10, 10);
 }
 
-.follow{
+.tbox {
+    margin: 30px 0 0 0;
+    width: 300px;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.follow {
     margin: 100px 0 0 0;
     background-color: orange;
     height: 20px;
 }
 
-.footer{
+.footer {
     background-color: #252e95;
     height: 20px;
 }
-
