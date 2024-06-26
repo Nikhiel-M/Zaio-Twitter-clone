@@ -21,15 +21,16 @@ html, body {
 
 .mdtxt {
     font-size: 20px;
-    margin-left: 10px;
+    margin: 0 0 0 10px;
     font-weight: 600;
 }
 
 .smtxt {
     font-size: 14px;
-    margin-left: 10px;
+    margin: 0 0 0 20px ;
     font-weight: 500;
     color: rgb(89, 93, 96);
+    
 }
 
 .smtxt:last-child {
@@ -38,7 +39,16 @@ html, body {
 
 .show-more {  
     font-size: 18px;
-    margin: 10px 0 18px 15px;
+    margin: 10px 0 5px 15px;
+    font-weight: 500;
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.show-more2 {  
+    font-size: 18px;
+    margin: 10px 0 10px 25px;
     font-weight: 500;
     color: rgb(29, 155, 240);
     cursor: pointer;
@@ -57,7 +67,7 @@ html, body {
     height: 100vh;
     color: rgb(255, 255, 255);
     position: fixed;
-    padding-left: 10vw;
+    padding-left: 11vw;
     border-right: 1px solid grey;
 }
 
@@ -89,20 +99,22 @@ html, body {
     justify-content: left;
     align-items: center;
     padding: 0 8px 0 8px;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500; 
 }
 
 .category-text {
-    width: 250px;
+    width: fit-content;
     border-radius: 25px;
     border: none; 
     cursor: pointer; 
     transition: background-color 0.3s; 
+    margin:  0 0 20px 0 ;
+    padding: 0 15px 0 5px;
 }
 
 .category-text:hover {
-    background-color: rgb(55, 58, 60);
+    background-color: #181818;
 }
 
 .icon {
@@ -111,18 +123,41 @@ html, body {
     margin: 10px 15px 10px 10px;
 }
 
+.xicon{
+    height: 35px;
+    width: 35px;
+    margin: 10px 1px 10px 10px;
+}
+
+.xicon:hover{
+    background-color: #181818;
+}
+
+ 
+
 .twitter-button { 
-    height: 50px;
-    width: 200px;
+    height: 60px;
+    width: 270px;
     background-color: #1DA1F2; 
     color: #fff; 
     padding: 10px 20px; 
-    font-size: 16px; 
-    border-radius: 25px; 
+    font-size: 20px; 
+    border-radius: 30px; 
     border: none; 
     cursor: pointer; 
     transition: background-color 0.3s; 
-    font-weight: 900;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.icon-test{
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.icon-test:hover{
+    background-color: #71767b;
+
 }
 
 .twitter-button:hover {
@@ -136,12 +171,14 @@ html, body {
 .profile-container {
     display: flex;
     align-items: center;
-    margin-top: 40px;
-    padding: 10px;
+    margin-top: 160px;
+    margin-left: 10px;
+    padding: 10px 170px 10px 10px;
     border: none; 
     cursor: pointer; 
     border-radius: 25px; 
     transition: background-color 0.3s;
+    width: fit-content;
 }
 
 .profile-container:hover {
@@ -178,7 +215,7 @@ html, body {
 }
 
 .search-box {
-    width: 300px;
+    width: 400px;
     padding: 10px;
     border-radius: 25px;
     background-color: rgb(32, 35, 39);
@@ -200,8 +237,7 @@ html, body {
     color: #777;
 }
 
-.search-icon {
-    color: #777;
+.search-icon{
     background-color: #202327;
     height: 25px;
     width: 25px;
@@ -209,16 +245,36 @@ html, body {
 
 .premium {
     margin: 70px 0 0 0;
-    width: 300px;
+    width: 400px;
     color: rgb(255, 255, 255);
     border-radius: 25px;
     border: 1px solid rgb(47, 51, 54);
 }
 
 .premium-text {
+    width: 360px;
     font-size: medium;
     line-height: 25px;
     margin: 0 10px 10px 20px;
+}
+
+.twitter-subscribe-button{
+    height: 40px;
+    width: fit-content;
+    background-color: #1DA1F2; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 17px; 
+    border-radius: 25px; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    font-weight: 900;
+    margin: 0 0 20px 20px;
+}
+
+.twitter-subscribe-button:hover {
+    background-color: #0d8ddb; 
 }
 
 .trendstext {
@@ -234,7 +290,7 @@ html, body {
 
 .tbox {
     margin: 30px 0 0 0;
-    width: 300px;
+    width: 400px;
     color: rgb(255, 255, 255);
     border-radius: 25px;
     border: 1px solid rgb(47, 51, 54);
@@ -244,7 +300,7 @@ html, body {
     background-color: #000000;
     border-radius: 15px;
     border: 1px solid #2F3336;
-    width: 300px;
+    width: 400px;
     padding: 10px;
     margin: 30px 0 0 0;
     color: white;
@@ -262,6 +318,10 @@ html, body {
     margin-bottom: 15px;
 }
 
+.follow-profile:hover{
+    background: rgb(15, 15, 15);
+}
+
 .profile-pic {
     width: 48px;
     height: 48px;
@@ -277,6 +337,7 @@ html, body {
     display: block;
     font-size: 16px;
     font-weight: bold;
+    color: white;
 }
 
 .profile-username {
@@ -409,3 +470,4 @@ html, body {
     border-radius: 25px;
    
 }
+
