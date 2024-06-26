@@ -76,7 +76,7 @@ html, body {
     width: 60vw;
     height: 100vh;
     margin-left: 30vw; 
-    overflow: hidden;
+    
 }
 
 .feed {
@@ -133,8 +133,6 @@ html, body {
     background-color: #181818;
 }
 
- 
-
 .twitter-button { 
     height: 60px;
     width: 270px;
@@ -147,7 +145,7 @@ html, body {
     cursor: pointer; 
     transition: background-color 0.3s; 
     font-weight: 700;
-    margin-left: 20px;
+    margin: 20px 0 0 20px;
 }
 
 .icon-test{
@@ -171,7 +169,7 @@ html, body {
 .profile-container {
     display: flex;
     align-items: center;
-    margin-top: 160px;
+    margin-top: 140px;
     margin-left: 10px;
     padding: 10px 170px 10px 10px;
     border: none; 
@@ -282,6 +280,7 @@ html, body {
     flex-direction: column;
     cursor: pointer;  
     background-color: rgb(0, 0, 0);
+    margin: 0 0 5px 0;
 }
 
 .trendstext:hover {
@@ -374,6 +373,7 @@ html, body {
 }
 
 .for-you{
+    height: 6vh;
     display: flex;
     justify-content: space-evenly;
     border-bottom: 1px solid grey ;
@@ -382,10 +382,27 @@ html, body {
     
 }
 
-.for-you h1:last-child{
-    margin: 0;
-    border-left: 1px solid grey ;
-    padding-left: 60px;
+.fyp{
+    overflow: hidden;
+    width:70px;
+     border-bottom: 5px solid #1DA1F2;
+     border-radius: 2px;
+     padding: 0 0 0 0 ;
+}
+
+.following{
+    width:70px;
+    margin-top: 20px;
+    color: #181818;
+     margin: 0;
+    margin-left: 0px;
+    padding: 15px 0 0 100px ;
+}
+
+
+.for-you h1:hover{
+    background-color: #71767b;
+
 }
 
 .post-tweet{
@@ -399,18 +416,18 @@ html, body {
 }
 
 .interact{
-    margin: 50px 0 0 60px ;
+    margin: 30px 0 0 60px ;
 }
 
 .interact-icon{
-    margin: 0 5px;
+    margin: 0 5px 0 5px ;
     height: 28px;
     width: 28px;
 
 }
 
 .post-btn{ 
-    margin: 0 0 0 250px;
+    margin: 0 0 0 270px;
     height: 50px;
     width: 100px;
     background-color: #0f4e78; 
@@ -432,16 +449,19 @@ html, body {
 
 .fix{
     display: flex;
+    margin-left: 40px;
 }
 
 .npc-posts{
-    margin-left: 50px;
+    
+    border-bottom: 1px solid grey;
 }
 
 .npctxt{
     width: fit-content;
     display: flex;
     flex-direction: column;
+    margin: 0 0 0 10px;
 }
 
 .profile-txt{
@@ -451,6 +471,8 @@ html, body {
 
 .tprofile-name{
      color: white;
+     font-size: 20px;
+     margin: 10px 0 0 0;
 }
 
 .tprofile-name:hover{
@@ -458,16 +480,89 @@ html, body {
 }
 
 .profile-info{
+    margin: 10px 0 0 0;
     color: #606060;
+    font-size: 20px;
    
 }
 
 .twt-txt{
     color: white;
+    font-size: 20px;
+    margin:  10px 0 0 0;
+
+}
+
+.npc-img{
+    margin-left: 90px;
 }
 
 .twt-img{
     border-radius: 25px;
-   
+   margin:  10px 0 0 0;
+   width: 55vh;
+
 }
 
+.tweet-interacts{
+    display: flex;
+    margin:  20px 0 10px 100px;
+}
+
+.tweet-interacts span{
+    margin-right: 60px;
+    display: flex;
+}
+
+.for-you h1{
+font-size: 20px;
+padding:  10px 0 0 0;
+
+}
+
+.interact-btns{
+    height:20px ;
+    width:20px ;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 25px;
+    width: 400px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.input-box {
+
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.input-box::placeholder {
+    font-size: 25px;
+    color: #575757;
+}
+
+.interact-txt{
+    cursor: pointer;
+    color: #71767b;
+   font-size: 15px;
+}
