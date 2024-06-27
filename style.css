@@ -388,7 +388,7 @@ padding:  0 130px 0 130px;
 }
 
 .fyp:hover{
-    background-color: #303030;
+    background-color: #222222;
 }
 
 .fyp h1{
@@ -522,8 +522,6 @@ padding:  0 130px 0 130px;
     margin-right: 10px;
     cursor: pointer;
 }
-
-
 
 .input-container {
     display: flex;
