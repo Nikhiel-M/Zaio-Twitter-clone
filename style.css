@@ -39,26 +39,24 @@ html, body {
 
 .show-more {  
     font-size: 18px;
-    margin: 10px 0 5px 15px;
+    
     font-weight: 500;
     color: rgb(29, 155, 240);
     cursor: pointer;
     text-decoration: none;
+    padding:  10px 10px 10px 10px ;
+    margin: 0 0 15px 0 ;
+   
 }
 
-.show-more2 {  
-    font-size: 18px;
-    margin: 10px 0 10px 25px;
-    font-weight: 500;
-    color: rgb(29, 155, 240);
-    cursor: pointer;
-    text-decoration: none;
+.show-more:hover{
+    background-color: #0a0a0a
 }
 
 .mainbody {
     display: flex;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 .home { 
@@ -67,8 +65,8 @@ html, body {
     height: 100vh;
     color: rgb(255, 255, 255);
     position: fixed;
-    padding-left: 11vw;
-    border-right: 1px solid grey;
+    padding-left: 9vw;
+    border-right: 1px solid #2f3336;
 }
 
 .tweets {
@@ -89,7 +87,7 @@ html, body {
     
 }
 .border-fix{
-    border-right: 1px solid grey;
+    border-right: 1px solid #2f3336;
 }
 
 .category-section {
@@ -103,16 +101,18 @@ html, body {
     padding: 0 8px 0 8px;
     font-size: 23px;
     font-weight: 500; 
+    margin:  0 0 3px 0;
 }
 
 .category-text {
+    display: flex;
     width: fit-content;
     border-radius: 25px;
     border: none; 
     cursor: pointer; 
     transition: background-color 0.3s; 
-    margin:  0 0 20px 0 ;
-    padding: 0 15px 0 5px;
+    margin:  0 0 5px 0 ;
+    padding: 5px 15px 5px 5px;
 }
 
 .category-text:hover {
@@ -120,9 +120,10 @@ html, body {
 }
 
 .icon {
-    height: 35px;
-    width: 35px;
-    margin: 10px 15px 10px 10px;
+    fill: white;
+    height: 30px;
+    width: 30px;
+    margin: 5px 15px 5px 10px;
 }
 
 .xicon{
@@ -147,7 +148,7 @@ html, body {
     cursor: pointer; 
     transition: background-color 0.3s; 
     font-weight: 700;
-    margin: 20px 0 0 20px;
+    margin: 15px 0 0 10px;
 }
 
 .icon-test{
@@ -171,14 +172,20 @@ html, body {
 .profile-container {
     display: flex;
     align-items: center;
-    margin-top: 140px;
+    margin-top: 35px;
     margin-left: 10px;
-    padding: 10px 170px 10px 10px;
+    padding: 10px 0 10px 10px;
     border: none; 
     cursor: pointer; 
-    border-radius: 25px; 
+    border-radius: 30px; 
     transition: background-color 0.3s;
     width: fit-content;
+}
+
+.profile-blue{
+    fill:#ffffff ;
+    display: flex;
+    margin:  0 0 0 100px;
 }
 
 .profile-container:hover {
@@ -201,6 +208,19 @@ html, body {
     font-size: 1.2em;
     display: flex;
     align-items: center;
+}
+
+.hprofile-name{
+    display: flex;
+    font-size: 20px;
+}
+
+.name-icon{
+    margin:  5px 0 0 0;
+    fill: white;
+    height:20px;
+    width:20px;
+
 }
 
 .profile-username {
@@ -278,15 +298,16 @@ html, body {
 }
 
 .trendstext {
+    width: 395px;
     display: flex;
-    flex-direction: column;
+   justify-content: space-between;
     cursor: pointer;  
     background-color: rgb(0, 0, 0);
     margin: 0 0 5px 0;
 }
 
 .trendstext:hover {
-    background: rgb(10, 10, 10);
+    background: #0a0a0a;
 }
 
 .tbox {
@@ -294,15 +315,16 @@ html, body {
     width: 400px;
     color: rgb(255, 255, 255);
     border-radius: 25px;
-    border: 1px solid rgb(47, 51, 54);
+    border: 1px solid #2f3336;
 }
 
 .follow-section {
+    height: fit-content;
     background-color: #000000;
     border-radius: 15px;
     border: 1px solid #2F3336;
     width: 400px;
-    padding: 10px;
+    padding: 0px;
     margin: 30px 0 0 0;
     color: white;
 }
@@ -310,17 +332,20 @@ html, body {
 .follow-heading {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 10px;
 }
 
 .follow-profile {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    padding:  0 5px 0 5px ;
+    margin-left: 5px;
 }
 
 .follow-profile:hover{
     background: rgb(15, 15, 15);
+
 }
 
 .profile-pic {
@@ -354,6 +379,8 @@ html, body {
     border-radius: 20px;
     padding: 5px 15px;
     font-size: 14px;
+    font-weight: 700;
+    margin-right: 5px;
     
 }
 
@@ -375,18 +402,21 @@ html, body {
 }
 
 .for-you{
-    height: 6vh;
+    height: 60px;
+    width: 673px;
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 1px solid grey ;
+    border-bottom: 1px solid #2f3336 ;
     color: white;
-    
-    
+    position: fixed;
+   
 }
 
 .fyp{
-padding:  0 130px 0 130px;
-
+padding:  0 120px 0 129px;
+background-color: #000000e6;
+-webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .fyp:hover{
@@ -394,48 +424,60 @@ padding:  0 130px 0 130px;
 }
 
 .fyp h1{
-    margin: 20px 0 0 0;
+    margin: 18px 0 0 0;
     font-size: 20px;
     border-bottom: 5px solid #1DA1F2;
     padding-bottom: 14px;
     border-radius: 2px;
+    padding-left: 1px;
+    padding-right: 4px;
 }
 
 .fyp h2{
-    color: #383838;
+    padding: 0 13px 0 0;
+    color: #656565;
     margin: 20px 0 0 0;
     font-size: 20px;
 }
 
 .post-tweet{
-    border-bottom: 1px solid grey;
-    height: 15vh;
+    border-bottom: 1px solid #2f3336;
+    height: 20vh;
 }
 
 .write-section{
-    margin: 40px 0 0 30px;
+    
+    margin: 0px 0 0 30px;
+    padding:  80px 0 0 0;
     
 }
 
 .interact{
-    margin: 30px 0 0 60px ;
+    margin: 10px 0 0 60px ;
 }
 
 .interact-icon{
+    fill: #1d9bf0;
     margin: 0 5px 0 5px ;
     height: 28px;
     width: 28px;
+}
 
+.interact-pin{
+    fill: #0f4e78;
+    margin: 0 5px 0 5px ;
+    height: 28px;
+    width: 28px;
 }
 
 .post-btn{ 
-    margin: 0 0 0 270px;
-    height: 50px;
-    width: 100px;
+    margin: 0 0 0 240px;
+    height: 40px;
+    width: 80px;
     background-color: #0f4e78; 
-    color: #999999; 
-    padding: 10px 20px; 
-    font-size: 16px; 
+    color: #7d7d7d; 
+    padding: 8px 10px; 
+    font-size: 15px; 
     border-radius: 25px; 
     border: none; 
     cursor: pointer;
@@ -455,7 +497,7 @@ padding:  0 130px 0 130px;
 }
 
 .npc-posts{
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid#2f3336;
 }
 
 .npctxt{
@@ -500,47 +542,131 @@ padding:  0 130px 0 130px;
 
 .twt-img{
     border-radius: 25px;
-   margin:  10px 0 0 0;
+   margin:  10px 20px 0 0;
    width: 55vh;
 
 }
 
 .tweet-interacts{
     display: flex;
-    margin:  20px 0 10px 100px;
+    margin:  10px 0 5px 80px;
+    color: #71767b;
+    cursor: pointer;
+    
 }
 
-.tweet-interacts span{
-    margin-right: 60px;
+.post-blue{
+    fill:#71767b ;
+    color: #71767b;
+     margin: 0 0 0 260px;
     display: flex;
+}
+
+.post-blue:hover{
+    fill: #1d9bef;
+    color: #1d9bef;
+}
+
+.post-blue svg:hover{
+    background-color: #0a171f;
+    border-radius: 50%;
+}
+
+.blue{
+    fill:#71767b ;
+    color: #71767b;
+     margin-right: 60px;
+    display: flex;
+}
+
+.blue:hover{
+    fill: #1d9bef;
+    color: #1d9bef;
+}
+
+.blue svg:hover{
+    background-color: #0a171f;
+    border-radius: 50%;
+}
+
+.pink{
+    fill:#71767b ;
+    color: #71767b;
+     margin-right: 60px;
+    display: flex;
+}
+
+.pink:hover{
+    fill: #f91880;
+    color: #f91880;
+}
+
+.pink svg:hover{
+    background-color: #200914;
+    border-radius: 50%;
+}
+
+.green{
+    fill:#71767b ;
+    color: #71767b;
+     margin-right: 60px;
+    display: flex;
+}
+
+.green:hover{
+    fill: #00ba7c;
+    color: #00ba7c;
+}
+
+.green svg:hover{
+    background-color: #071a14;
+    border-radius: 50%;
 }
 
 
 
 .interact-btns{
+    
     padding: 10px;
     height:40px ;
     width:40px ;
     cursor: pointer;
 }
 
-.interact-btns:hover{
-    background-color: #202327;
-    border-radius: 50%;
-}
 
 .interact-txt{
     margin:  10px 0 0 0;
     cursor: pointer;
-    color: #71767b;
    font-size: 15px;
 }
+
+
+.corner{
+    display:flex;
+   
+} 
+
+.corner-blue{
+    fill:#71767b ;
+    display: flex;
+    margin:  0 0 0 0;
+    padding: 10px;
+    height:40px;
+    width:40px;
+}
+
+.corner-blue:hover{
+    fill: #1d9bef;
+    background-color: #0a171f;
+    border-radius: 50%;
+}
+
 
 .input-container {
     display: flex;
     align-items: center;
     background-color: #000000;
-    padding: 10px;
+    padding: 10px 0 0 0 ;
     border-radius: 25px;
     width: 400px;
 }
@@ -568,3 +694,34 @@ padding:  0 130px 0 130px;
     color: #575757;
 }
 
+.trend-blue{
+    fill:#71767b ;
+    color: #71767b;
+     margin: 0 0 0 0;
+    display: flex;
+    align-items: center;
+    padding:  0 25px 0 0;
+}
+
+.trend-blue:hover{
+    fill: #1d9bef;
+    color: #1d9bef;
+}
+
+.trend-blue svg:hover{
+    background-color: #0a171f;
+    border-radius: 50%
+}
+
+.trend-fix{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.trend-btns{
+    margin: 0 0 0 0;
+    height:22px ;
+    width:22px ;
+    cursor: pointer;
+}

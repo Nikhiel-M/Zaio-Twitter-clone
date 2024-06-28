@@ -1,0 +1,29 @@
+@media (max-width: 480px) and (min-width: 10px) {
+   
+    .mainbody{
+
+    }
+
+    .for-you{
+        display: none;
+    }
+    .post-tweet{
+        display: none;
+    }
+
+    .feed{
+        display: none;
+    }
+    .profile-details{
+        display: none;
+    }
+    
+    .test{
+        margin:  0 0 0 0;
+    }
+
+
+    .home{
+        display: none;
+    }
+}
