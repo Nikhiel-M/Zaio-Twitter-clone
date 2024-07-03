@@ -74,6 +74,7 @@ html, body {
     width: 59vw;
     height: 100vh;
     margin-left: 30vw; 
+    z-index: 0;
     
 }
 
@@ -134,6 +135,7 @@ html, body {
 
 .xicon:hover{
     background-color: #181818;
+    
 }
 
 .twitter-button { 
@@ -409,7 +411,6 @@ html, body {
     border-bottom: 1px solid #2f3336 ;
     color: white;
     position: fixed;
-   
 }
 
 .fyp{
@@ -417,6 +418,8 @@ padding:  0 120px 0 129px;
 background-color: #000000e6;
 -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+  cursor: pointer;
+ 
 }
 
 .fyp:hover{
@@ -426,6 +429,7 @@ background-color: #000000e6;
 .fyp h1{
     margin: 18px 0 0 0;
     font-size: 20px;
+   
     border-bottom: 5px solid #1DA1F2;
     padding-bottom: 14px;
     border-radius: 2px;
@@ -458,9 +462,15 @@ background-color: #000000e6;
 
 .interact-icon{
     fill: #1d9bf0;
-    margin: 0 5px 0 5px ;
-    height: 28px;
-    width: 28px;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+}
+
+.interact-icon:hover{
+    background-color: #0a171f;
+    border-radius: 50%;
+
 }
 
 .interact-pin{
@@ -498,6 +508,9 @@ background-color: #000000e6;
 
 .npc-posts{
     border-bottom: 1px solid#2f3336;
+}
+.npc-posts:hover{
+    background-color: #060606;
 }
 
 .npctxt{
@@ -623,24 +636,6 @@ background-color: #000000e6;
     border-radius: 50%;
 }
 
-
-
-.interact-btns{
-    
-    padding: 10px;
-    height:40px ;
-    width:40px ;
-    cursor: pointer;
-}
-
-
-.interact-txt{
-    margin:  10px 0 0 0;
-    cursor: pointer;
-   font-size: 15px;
-}
-
-
 .corner{
     display:flex;
    
@@ -659,6 +654,21 @@ background-color: #000000e6;
     fill: #1d9bef;
     background-color: #0a171f;
     border-radius: 50%;
+}
+
+.interact-btns{
+    
+    padding: 10px;
+    height:40px ;
+    width:40px ;
+    cursor: pointer;
+}
+
+
+.interact-txt{
+    margin:  10px 0 0 0;
+    cursor: pointer;
+   font-size: 15px;
 }
 
 
@@ -718,10 +728,26 @@ background-color: #000000e6;
     flex-direction: column;
 }
 
-
 .trend-btns{
     margin: 0 0 0 0;
     height:22px ;
     width:22px ;
     cursor: pointer;
 }
+
+.header-responsive{
+    display: none;
+}
+
+.fyp-fix{
+    display: flex;
+}
+
+.responsive-footer{
+    display: none;
+}
+
+.responsive.btn{
+    display: none;
+}
+
