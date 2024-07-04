@@ -4,6 +4,9 @@
     padding: 0;
     margin: 0;
 }
+.mainbody{
+    background-color: black;
+}
 
 html, body {
     width: 100%;
@@ -65,13 +68,13 @@ html, body {
     height: 100vh;
     color: rgb(255, 255, 255);
     position: fixed;
-    padding-left: 9vw;
+    padding-left: 7.8vw;
     border-right: 1px solid #2f3336;
 }
 
 .tweets {
     background-color: black;
-    width: 59vw;
+    width: 35.2vw;
     height: 100vh;
     margin-left: 30vw; 
     z-index: 0;
@@ -84,7 +87,9 @@ html, body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
+    padding: 0 0 0 40px ;
+    margin:  0 150px 0 0;
+    
     
 }
 .border-fix{
@@ -174,14 +179,14 @@ html, body {
 .profile-container {
     display: flex;
     align-items: center;
-    margin-top: 35px;
-    margin-left: 10px;
+    bottom: 9px;
     padding: 10px 0 10px 10px;
     border: none; 
     cursor: pointer; 
     border-radius: 30px; 
     transition: background-color 0.3s;
     width: fit-content;
+    position: absolute;
 }
 
 .profile-blue{
@@ -237,7 +242,7 @@ html, body {
 }
 
 .search-box {
-    width: 400px;
+    width: 350px;
     padding: 10px;
     border-radius: 25px;
     background-color: rgb(32, 35, 39);
@@ -260,21 +265,21 @@ html, body {
 }
 
 .search-icon{
-    background-color: #202327;
+    fill: #777777;
     height: 25px;
     width: 25px;
 }
 
 .premium {
     margin: 70px 0 0 0;
-    width: 400px;
+    width: 350px;
     color: rgb(255, 255, 255);
     border-radius: 25px;
     border: 1px solid rgb(47, 51, 54);
 }
 
 .premium-text {
-    width: 360px;
+    width: 330px;
     font-size: medium;
     line-height: 25px;
     margin: 0 10px 10px 20px;
@@ -300,7 +305,7 @@ html, body {
 }
 
 .trendstext {
-    width: 395px;
+    width: 347px;
     display: flex;
    justify-content: space-between;
     cursor: pointer;  
@@ -314,7 +319,7 @@ html, body {
 
 .tbox {
     margin: 30px 0 0 0;
-    width: 400px;
+    width: 350px;
     color: rgb(255, 255, 255);
     border-radius: 25px;
     border: 1px solid #2f3336;
@@ -325,7 +330,7 @@ html, body {
     background-color: #000000;
     border-radius: 15px;
     border: 1px solid #2F3336;
-    width: 400px;
+    width: 350px;
     padding: 0px;
     margin: 30px 0 0 0;
     color: white;
@@ -747,7 +752,7 @@ background-color: #000000e6;
     display: none;
 }
 
-.responsive.btn{
+.blue-button{
     display: none;
 }
 
